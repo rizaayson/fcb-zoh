@@ -1,0 +1,51 @@
+ZOH Git Basics Notes
+
+To set up Git on your PC, create an SSH key:
+	1. Create an SSH Key.
+		Terminal > ssh-keygen
+
+	2. Copy the SSH key.
+	    Linux
+	        xclip -sel clip < ~/.ssh/id_rsa.pub
+
+	    Mac
+	        pbcopy < ~/.ssh/id_rsa.pub
+
+	    Windows
+	        cat ~/.ssh/id_rsa.pub | clip
+
+	3. Add the generated SSH key to your Github.
+		Browser > Github > Profile Icon > Settings > SSH and GPG Keys > New SSH Key
+
+To configure the git account in the device/project:
+	1. Configure the global user email
+		Terminal > git config --global user.email "[git account email address]"
+
+	2. Configure the global user name
+		Terminal > git config --global user.name "[git account username]"
+
+	3. Check the git user credentials.
+		Terminal > git config --global --list
+
+To connect local repository to an remote repository:
+
+	1. Initialize a local git repository.
+		Terminal > git init
+
+	2. Peek at the states of the files/folders
+		Terminal > git status
+
+	3. Add a remote repository.
+		Terminal > git remote add origin <your-repo-url.git>
+
+	4. Check if the remote is added correctly.
+		Terminal > git remote -v
+
+	5. Stage the files in preparation for creating a commit.
+		Terminal > git add .
+
+	6. Create a commit.
+		Terminal > git commit -m "Initial commit"
+
+	7. Upload the local repository to a remote repository.
+		Terminal > git push origin master
