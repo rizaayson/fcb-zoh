@@ -5,6 +5,13 @@ selector {
 }
 */
 
+/*CSS Reset - set of CSS rules that removes the default styling applied by browsers to HTML elements. */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 /*Universal Selector (*) - it selects every element on the page.*/
 
 * {
@@ -17,7 +24,12 @@ h1 {
 }
 
 body {
-	background-color: skyblue;
+	/*background-color: skyblue;*/
+	background-image: url(https://images.unsplash.com/photo-1542640244-7e672d6cef4e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 }
 
 section {
@@ -31,6 +43,14 @@ nav {
 	padding: 15px;
 }
 
+a {
+	text-decoration: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
 /*Class Selector (.) - it selects all elements that have a specific class attribute.*/
 .nav-link {
 	font-size: 18px;
@@ -38,6 +58,29 @@ nav {
 
 .title {
 	color: green;
+}
+
+.module-image {
+	height: 200px;
+	width: 200px;
+}
+
+.module-card {
+	border: 2px solid black;
+	padding: 20px;
+	height: 350px;
+	width: 800px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.title {
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 /*ID Selector (#) - it selects a specific element by its unique ID.*/
@@ -50,4 +93,10 @@ nav {
 	height: 300px;
 	width: 300px;
 	border-radius: 150px;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+#modules {
+	margin-top: 30px;
 }
