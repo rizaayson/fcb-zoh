@@ -1,0 +1,53 @@
+/*
+CSS Rules Syntax
+selector {
+	property:value;
+}
+*/
+
+/*Universal Selector (*) - it selects every element on the page.*/
+
+* {
+	font-family: "Courier New", monospace;
+}
+
+/*Type Selector - it selects all elements of a specific HTML tag or type.*/
+h1 {
+	font-family: "Tahoma", sans-serif;
+}
+
+body {
+	background-color: skyblue;
+}
+
+section {
+	text-align: center;
+}
+
+nav {
+	background-color: white;
+	text-align: center;
+	/*padding is a property that allows us to add a space within an element.*/
+	padding: 15px;
+}
+
+/*Class Selector (.) - it selects all elements that have a specific class attribute.*/
+.nav-link {
+	font-size: 18px;
+}
+
+.title {
+	color: green;
+}
+
+/*ID Selector (#) - it selects a specific element by its unique ID.*/
+#hello {
+	color: black;
+	font-size: 2rem;
+}
+
+#logo {
+	height: 300px;
+	width: 300px;
+	border-radius: 150px;
+}
